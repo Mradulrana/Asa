@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ASA Solution</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:image" content="#" />
+    <link rel="canonical" href="#" />
+
+    <!-- styling sheet -->
+    <link rel="stylesheet" href="./assets/css/bootstarp.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tem.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <!-- fontfamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- fontawsome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .images img {
+            width: 100%;
+            height: 40dvh;
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            z-index: 0;
+        }
+
+        .content::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: #00000088;
+            top: 0;
+            left: 0;
+            z-index: 999 !important;
+        }
+
+        .hero-container {
+            position: relative;
+
+        }
+
+        .medi-services {
+            background-color: #EBFCFF;
+            padding: 0 50px;
+        }
+
+        .medi-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+
+        .medi-text h3 {
+            color: #fff;
+            font-size: 3rem;
+        }
+
+        .med-hero-btn {
+            background: transparent;
+            padding: 10px 25px;
+            border: 1px solid #0088ca;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .medi-services-text,
+        .medi-content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border: 2px dashed #ccc;
+            padding: 100px 0;
+        }
+
+        .medi-box {
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            display: grid;
+            place-items: center;
+            text-align: center;
+        }
+
+        .medi-box:nth-child(1) {
+            background-color: #0088ca;
+            border: 1px solid #0088ca;
+            color: #fff;
+        }
+
+        .medi-box:nth-child(2) {
+            background-color: #832D70;
+            border: 1px solid #832D70;
+            color: #fff;
+        }
+
+        .medi-box:nth-child(3) {
+            background-color: #ff0000bd;
+            border: 1px solid #ff0000bd;
+            color: #fff;
+        }
+
+        .medi-box div p,
+        .medi-box div i {
+            font-size: 1.4rem;
+        }
+
+        .para {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 1.5rem;
+            color: #5b00ca;
+        }
+
+        .medi-box div i {
+            font-size: 3rem;
+        }
+
+        .medi-heading h2 {
+            text-align: center;
+            color: #32682abd;
+            font-size: 2rem;
+            margin: 100px 0 0 0;
+        }
+
+        .medi-services-text {
+            border: unset;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .medi-services span i {
+            color: #FF4242;
+        }
+
+        .practice-management-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .practice-management-container img {
+            max-width: 500px;
+        }
+
+        .practice-txt {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .practice-txt h2,
+        .practice-txt p {
+            letter-spacing: 1px;
+            color: #002750;
+            line-height: 1.6;
+        }
+
+        .practice-txt-2 {
+            text-align: center;
+            line-height: 2;
+            width: 100%;
+            color: #002750;
+        }
+        .practice-txt-2 ul li,
+        .practice-txt-2 p {
+            text-align: start
+        }
+        .practice-txt-2 ul li{
+            line-height: 1.9;
+        }
+
+        .practice-txt-2 h2 {
+            font-size: 2.7rem;
+            font-weight: 400;
+            color: #832D70;
+            text-align: start;
+        }
+        .practice-txt-2 ul li svg path{
+            fill: #832D70;;
+        }
+    
+
+        .practice-txt-3 {
+            background-color: #002750;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 100px 0;
+            line-height: 1.5;
+            margin: 50px 0;
+        }
+
+        .practice-txt-3 h3 {
+            color: #F76501;
+            text-align: center;
+            font-size: 1rem;
+            line-height: 1.5;
+            max-width: 70%;
+        }
+
+        .practice-txt-2-imgs img {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 50px;
+            border-radius: 25px;
+            object-fit: contain;
+        }
+
+        .started-btn {
+            background: transparent;
+            border: 1px solid #F76501;
+            padding: 8px 25px;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            color: #fff;
+            font-weight: 100;
+            transition: color 0.57s;
+        }
+
+        .started-btn:hover {
+            color: #F76501;
+            border: 1px solid #fff;
+        }
+
+        @media (max-width:1280px) {
+            .practice-management-container {
+                flex-direction: column;
+            }
+
+            .medi-content-wrapper {
+                flex-wrap: wrap;
+            }
+
+            .practice-management-container img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .practice-txt {
+                max-width: 69%;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width:1080px) {
+            .medi-services-text {
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: start;
+
+            }
+
+        }
+
+        @media (max-width:992px) {
+            .display-none {
+                display: none;
+            }
+        }
+
+        @media (max-width:517px) {
+            .medi-services-text {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 30px 0;
+            }
+
+            .medi-text {
+                width: 80%;
+            }
+
+            .practice-txt {
+                max-width: 100%;
+            }
+
+            .practice-txt-2 h2 {
+                font-size: 1.5rem;
+            }
+
+            .para,
+            .practice-txt-3 h2,
+            .practice-txt-3 h3,
+            .medi-text h3 {
+                font-size: 1.1rem;
+            }
+
+            .medi-content-wrapper {
+                padding: 30px 0;
+            }
+
+            .medi-box {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navigation bar start -->
+    <div id="navbar-fixed-top" class="navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="row header-pad no-gutters">
+                    <nav class="navbar w-100">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <img alt="logo" class="retina0 main-logo" src="./assets/imgs/logo/ASA LOGO.png"
+                                    style="width: 73px; height: auto" />
+                                <img alt="logo" class="retina0 insights-logo d-none"
+                                    src="./assets/imgs/logo/ASA LOGO.png" style="width: 73px; height: auto" />
+                            </a>
+                        </div>
+                        <div class="nav-bar-wrapper">
+                            <div class="phone text-right visible-desktop">
+                                <a class="info-hover" href="#">Sales
+                                    <div class="tooltip show">Email</div>
+                                </a>
+                                <a href="tel:+" style="color: #000; text-decoration: none">+92 000 000
+                                    0000</a>&nbsp;<span style="display: none">&nbsp;&nbsp;|</span><a
+                                    style="display: none" href="#" class="hvr-sweep-to-right btn-align">Log In</a>
+                            </div>
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+                                <!-- <button class="navbar-toggler navbar-toggler1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">                       
+                           </button> -->
+                                <button class="navbar-toggler navbar-toggler1" type="button" data-toggle="collapse"
+                                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="line"></span><span class="line"></span><span class="line"
+                                        style="margin-bottom: 0"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <div class="navbar-close">X</div>
+                                    <ul class="pull-right nav nav-pills">
+                                        <li>
+                                            <a data-toggle="dropdown" class="dropdown-toggle">Solutions <b
+                                                    class="caret"></b></a>
+                                            <div class="dropdown-menu">
+                                                <div>
+                                                    <div class="titlemenuh2">
+                                                        <p class="mian">Solutions</p>
+                                                    </div>
+                                                    <div class="d-flex border-b">
+                                                        <div class="navi-box">
+                                                            <a href="./medical-billing-services.html">
+                                                                <h4>Medical billing Services</h4>
+                                                                <p>
+                                                                    Architecture, features, compliance,
+                                                                    standards and delivery models
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="navi-box">
+                                                            <a href="./account-receivable-service.html">
+                                                                <h4>Account receivable service</h4>
+                                                                <p>
+                                                                    Enhance quality, efficiency and
+                                                                    productivity
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="navi-box">
+                                                            <a href="#">
+                                                                <h4>patient billing service</h4>
+                                                                <p>
+                                                                    Improve service quality and optimize
+                                                                    administrative workflows
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="navi-box">
+                                                            <a href="#">
+                                                                <h4>total practice billing compliance</h4>
+                                                                <p>
+                                                                    Specialty tools, content, templates and
+                                                                    automation
+                                                                </p>
+                                                            </a>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="titlemenuh2">
+                                                        <p class="mian">Additional Services</p>
+                                                    </div>
+                                                    <div class="d-flex border-b">
+                                                        <div class="navi-box">
+                                                            <a href="./credentials.html">
+                                                                <h4>Credentialing</h4>
+                                                                <p>
+                                                                    Reduce denials, increase collections and
+                                                                    fix revenue leaks
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="navi-box">
+                                                            <a href="./audit.html">
+                                                                <h4>Practice Audit</h4>
+                                                                <p>
+                                                                    Reduce denials, increase collections and
+                                                                    fix revenue leaks
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <!-- <div class="navi-box">
+                                                                <a href="/medical-credentialing-services.asp">
+                                                                    <h4>Credentialing</h4>
+                                                                    <p>Contracting your practice or entity effectively
+                                                                        to
+                                                                        maximize reimbursement.</p>
+                                                                </a>
+                                                            </div> -->
+                                                        <!-- <div class="navi-box">
+                                                                <a href="https://leap.health/reputation-management/"
+                                                                    target="_blank">
+                                                                    <h4>Reputation Management</h4>
+                                                                    <p>Boost online presence that attracts new patients
+                                                                    </p>
+                                                                </a>
+                                                            </div> -->
+                                                        <!-- <div class="navi-box rapid-link">
+                                                                <a href="https://leap.health/digital-check-in/"
+                                                                    target="_blank">
+                                                                    <h4>Digital Check-in</h4>
+                                                                    <p>Provide a streamlined check-in experience</p>
+                                                                </a>
+                                                            </div> -->
+                                                        <!-- <div class="navi-box">
+                                                                <a href="https://leap.health/telehealth/"
+                                                                    target="_blank">
+                                                                    <h4>Telehealth</h4>
+                                                                    <p>Simplify access to care and enrich the patient
+                                                                        experience
+                                                                    </p>
+                                                                </a>
+                                                            </div> -->
+                                                        <!-- <div class="navi-box">
+                                                                <a href="https://www.ASA Medica billing Service.com/accelerating-artificial-intelligence-in-healthcare.asp"
+                                                                    target="_blank">
+                                                                    <h4>AI</h4>
+                                                                    <p>Learn about ASA Medica billing Service's AI innovations at the point
+                                                                        of care
+                                                                    </p>
+                                                                </a>
+                                                            </div> -->
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="dropdown" class="dropdown-toggle">Company <b
+                                                    class="caret"></b></a>
+                                            <div class="dropdown-menu">
+                                                <div>
+                                                    <div class="titlemenuh2">
+                                                        <p class="mian">Company</p>
+                                                    </div>
+                                                    <div class="d-flex border-b">
+                                                        <div class="navi-box">
+                                                            <a href="#">
+                                                                <h4>About Us</h4>
+                                                                <p>
+                                                                    Everything there is to know about ASA
+                                                                    Medica billing Service
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="navi-box">
+                                                            <a href="./faq.html">
+                                                                <h4>Faq</h4>
+                                                                <p>Your favrate qustions to ask</p>
+                                                            </a>
+                                                        </div>
+                                                        <!-- </div> -->
+                                                    </div>
+                                                </div>
+                                                <div class="cb"></div>
+                                            </div>
+                                        </li>
+
+                                        <li class="last-child">
+                                            <a href="./contact-form.html" class="navprice navprice1 formod">
+                                                <button id="hd-button" class="btn btn-warning" type="button"
+                                                    style="font-weight: 700">
+                                                    Request Demo
+                                                </button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- .nav-bar-wrapper -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- .navbar navbar-fixed-top navbar-inverse-->
+    </div>
+    <!-- navigation bar End -->
+
+    <!-- hero section start -->
+    <section>
+        <div class="hero-container">
+            <div class="content hero-content">
+                <div class="images t">
+                    <img src="./assets/imgs/account-receivable-service/receivable-banner.jpg"
+                        alt="medical-billing-imgs">
+                    <img src="./assets/imgs/account-receivable-service/shipping-document-laptop-connection-homepage.jpg"
+                        alt="medical-billing-imgs">
+                </div>
+                <div class="medi-text">
+                    <h3>Medical Accounts <br> Receiveable Services</h3>
+                    <a href="./contact-form.html">
+                        <button class="med-hero-btn">Lets Get Started</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section End -->
+
+    <!-- account text start -->
+    <section>
+        <div class="container">
+            <div class="practice-management-container">
+                <div>
+                    <img src="./assets/imgs/account-receivable-service/receivable-image1.jpg" alt="avtars">
+                </div>
+                <div class="practice-txt">
+                    <h2>Accounts Receivables Process</h2>
+                    <p>
+                        Accounts Receivables process ensures that companies receive their payments within a particular
+                        time frame, enhance their collection rates, and process invoices more quickly, contributing to
+                        their income. It also includes an examination of insurance contracts to ensure that healthcare
+                        providers are adequately reimbursed.
+                        <br>
+                        A successful insurance model enables healthcare companies to and quickly recover past-due
+                        payments from insurance carriers. That is where accounts receivable (A/R) follow-ups come in
+                        medical billing. It assists healthcare service providers in running their practices effectively
+                        and successfully while ensuring that the owing cash is reimbursed as soon as possible.
+                        <br>
+                        Sometimes it can be hard to focus on your investment and make sure you receive money from
+                        patients and insurance companies, and you submit the correct forms, and your system works as
+                        appropriate. That is why an accounts receivable services company is the best option for busy
+                        schedule hospitals, clinics, and healthcare offices. The principal purpose of accounts
+                        receivable management in healthcare is to maximize cash flow into the medical business by
+                        reducing the collection timeframe and associated expenditures.
+                    </p>
+                </div>
+            </div>
+            <div class="practice-txt-2">
+                <div class="practice-txt-2-imgs">
+                    <img src="./assets/imgs/account-receivable-service/Medical-Accounts-Receivable-Services.webp"
+                        alt="avtars">
+                </div>
+
+                <p>The accounts receivable follow-up team of healthcare team is in charge of investigating denied claims
+                    and reopening them to get the maximum payment from insurance companies. Medical billing accounts
+                    receivable and Revenue Cycle Management handled in-house are a thing of the past. Billing
+                    professionals with specific skill sets are now required to handle A/R follow-ups.
+                    <br>
+                    In addition to A/R follow-up, various other critical operations such as charge entry, benefits
+                    verification, and payment posting, must be accomplished. A medical billing professional establishes
+                    the correct procedure code and diagnostic code depending on the treatment plan during these
+                    operations.
+                    <br>
+                    There is a potential that the insurance company will refuse claims if they are not submitted
+                    according to the insurance guidelines; therefore, having a specialized A/R staff that can follow up
+                    with the insurance firm to address your rejected claims is critical.
+
+                </p>
+                <h2>
+                    Why Outsource Accounts Receivable Services</h2>
+                <p>Today, many medical providers find their medical practice growing in their monthly expenses but are
+                    not attaining the same progress in their reoccurring cash flow. Unless exact and regular active
+                    accounts receivable follow up on the current billings is started, it is common to find a provider
+                    with excessive amounts in medical accounts receivable that are greater than 180 days outstanding.
+                    <br>
+                    Usually the volume of unpaid claims and the time it takes to research, correct, appeal, and re-file
+                    the claims will take much longer than estimated. A limited number of staff dedicated to this task
+                    will not be able to accomplish the goal, which is to extensively reduce/eliminate the outstanding
+                    accounts receivable and collect as much money as possible in a short period of time.
+                </p>
+                <h2>Why Choose Right Medical Billing to Outsource <br> Accounts Receivable Services</h2>
+                <p>The medical accounts receivable program offered by RMB overcomes the problems that basically delay
+                    the collection efforts by the individual providers. RMB follows these accounts by assigning a full
+                    team of individuals. That are dedicated to resolve the unpaid claims in the minimum time possible.
+                    We utilize experienced, well-trained individuals in the medical billing process as our collectors.
+                    Most of these employees have years of experience in medical coding and collections.
+
+                    <br>
+                    Companies must have an efficient and smooth Order-to-Cash cycle to maximize their cash flows and
+                    collection operations. Right Medical Billing transforms end-to-end accounts receivable management by
+                    optimizing cash flows, lowering past-due receivables, and assisting in identifying revenue leakages
+                    and refilling gaps.
+                    <br>
+                    Our employees collaborate closely with insurance companies to manage collection activities
+                    effectively while maintaining client relationships. Our Accounts Receivable Solutions are
+                    comprehensive while being entirely adaptable, allowing clients to select the entire bouquet of
+                    services or begin a new assignment with a subset of processes, business units, or locations. In
+                    addition, we make sure that our customers do not face any issues in receiving the payments for their
+                    services.
+                </p>
+                <h2>Accounts Receivable Services We Offer</h2>
+                <p>Right Medical Billing provides the following accounts receivable services to hospitals, emergency
+                    rooms, urgent cares, and Clinics.</p>
+                <ul>
+                    <li>
+                        <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        After receiving client consent, we prepare bills and send them to the insurance companies.</li>
+
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        Record and account for revenue.
+                    </li>
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        Preparation and submission of periodic declarations.
+                    </li>
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        Cash received on client accounts and short country resolution.
+                    </li>
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        Customer-approved credit memos and refund cheques are issued.
+                    </li>
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        Keep the subsidiary receivables ledger up to date.
+                    </li>
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        Implement process changes that have been agreed upon by the customer.
+                    </li>
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        Applying received funds to customer accounts and resolving short-payment issues.
+                    </li>
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                            </path>
+                        </svg>
+                        Monitoring and following up on accounts receivable collection.
+                    </li>
+                    <li> <svg width="15" aria-hidden="true" class="e-font-icon-svg e-fas-circle-notch"
+                        viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z">
+                        </path>
+                    </svg>
+                    Significant reduction in operating costs and complexities.
+                </li>
+
+                </ul>
+
+            </div>
+            <div class="practice-txt-3">
+                <h2>Contact Us for Medical Accounts Receivable Services</h2>
+                <h3>Contact Right Medical Billing today at <a href="tel:000-000-0000">(000)-000-0000</a>for your
+                    consultation. There are multiple advantages to allowing us to become a part of your team. We will
+                    help you increase your cash and patient flow while also helping you to streamline your work. Our
+                    team is more than just a billing company. Contact us to learn more about how we can help you.</h3>
+                <a href="./contact-form.html">
+                    <button class="started-btn">Get Started</button>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- for side chat -->
+    <ul class="follow-actions" role="list">
+        <li class="action-contact action" id="contact-email">
+            <a href="#" id="contact-email-init"><i class="contact-icon-email fas fa-envelope-open"></i>
+                <span class="peep-text">Contact Us</span></a>
+        </li>
+        <li class="action-contact action" id="contact-number-sales">
+            <a href="tel:+18666438367">
+                <i class="contact-icon-phone fas fa-phone-volume"></i>
+                <span class="peep-text2">Sales</span>
+                <span class="peep-text down">000-000-0000</span>
+            </a>
+        </li>
+        <li class="action-contact action" id="contact-number-support">
+            <a href="#">
+                <i class="contact-icon-phone2 fas fa-headphones"></i>
+                <span class="peep-text2">Support</span>
+                <span class="peep-text down">000-000-0000</span>
+            </a>
+        </li>
+        <li class="action-contact action" id="facebook">
+            <a href="#">
+                <i class="contact-icon-phone2 facebook fa-brands fa-facebook"></i>
+                <span class="peep-text2">Facebook</span>
+            </a>
+        </li>
+        <li class="action-contact action" id="youtube">
+            <a href="#">
+                <i class="contact-icon-phone2 youtube fa-brands fa-youtube"></i>
+                <span class="peep-text2">Youtube</span>
+            </a>
+        </li>
+        <li class="action-contact action" id="insta">
+            <a href="#">
+                <i class="contact-icon-phone2 insta fa-brands fa-instagram"></i>
+                <span class="peep-text2">Instagram</span>
+            </a>
+        </li>
+    </ul>
+    <!--Footer Start-->
+    <div class="mt60 bg_footer">
+        <div class="container">
+            <div class="row pt_60_85">
+                <div class="col-md-3 hidden-phone">
+                    <div class="title_footer">Solutions</div>
+                    <span class="b_top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <ul class="footer_ul">
+                        <li><a href="#" class="cool-link">Medical billing service</a></li>
+                        <li>
+                            <a href="/" class="cool-link">Patient Registration</a>
+                        </li>
+                        <li><a href="#" class="cool-link">Eligibility & Verification</a></li>
+                        <li><a href="#" class="cool-link">Claim submission</a></li>
+                        <li>
+                            <a href="#" class="cool-link">Claim Follow-Ups</a>
+                        </li>
+                        <li><a href="#" class="cool-link">Denial Management </a></li>
+                        <li><a href="#-" class="cool-link">Payment posting</a></li>
+                    </ul>
+                </div>
+                <!-- .hidden-phone -->
+                <div class="col-md-3 hidden-phone chapi">
+                    <div class="title_footer">Company</div>
+                    <span class="b_top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <ul class="footer_ul">
+                        <li><a href="#" class="cool-link"> About us</a></li>
+                        <li><a href="#" class="cool-link">FAQs</a></li>
+                        <li><a href="#" class="cool-link">Partners</a></li>
+
+                    </ul>
+                </div>
+                <!-- .hidden-phone -->
+                <div class="col-md-6 mb-3 widthwidth">
+                    <div class="title_footer">Contact Us</div>
+                    <span class="b_top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <div class="home-form">
+                        <form action="">
+                            <input type="text" placeholder="Name*">
+                            <input type="text" placeholder="Practice">
+                            <input type="email" name="eamil" id="" placeholder="Email*">
+                            <input type="tel" placeholder="Phone*">
+                            <input type="text" id="" placeholder="Comment">
+                            <button class="submit-btn">Send Request</button>
+                        </form>
+                    </div>
+                    <!-- .home-form -->
+                </div>
+                <!-- .widthwidth -->
+            </div>
+
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- .bg-footer -->
+
+    <!-- Sticky footer on mobile -->
+    <div style="
+          display: none;
+          width: 100%;
+          float: left;
+          left: 0px;
+          position: fixed;
+          z-index: 9999;
+          bottom: 0px;
+          padding-left: 5px;
+          font-family: 'PT Sans' !important;
+          background: #0088ca none repeat scroll 0% 0%;
+        " class="visible-xs">
+        <div class="custom-col-6 text-center" style="border-right: 1px solid #40a6d7">
+            <a href="tel:" style="padding: 16px 0px; font-size: 0px; text-align: center" class="call-link">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.006 512.006"
+                    style="enable-background: new 0 0 512.006 512.006" xml:space="preserve">
+                    <path d="M502.05,407.127l-56.761-37.844L394.83,335.65c-9.738-6.479-22.825-4.355-30.014,4.873l-31.223,40.139
+                c-6.707,8.71-18.772,11.213-28.39,5.888c-21.186-11.785-46.239-22.881-101.517-78.23c-55.278-55.349-66.445-80.331-78.23-101.517
+                c-5.325-9.618-2.822-21.683,5.888-28.389l40.139-31.223c9.227-7.188,11.352-20.275,4.873-30.014l-32.6-48.905L104.879,9.956
+                C98.262,0.03,85.016-2.95,74.786,3.185L29.95,30.083C17.833,37.222,8.926,48.75,5.074,62.277
+                C-7.187,106.98-9.659,205.593,148.381,363.633s256.644,155.56,301.347,143.298c13.527-3.851,25.055-12.758,32.194-24.876
+                l26.898-44.835C514.956,426.989,511.976,413.744,502.05,407.127z" />
+                </svg>
+                <span style="
+                font-size: 20px;
+                font-family: 'Myriad Set Pro', sans-serif;
+                padding-left: 8px;
+                position: relative;
+                top: -4px;
+                color: #fff;
+              ">Call</span>
+            </a>
+        </div>
+        <div class="custom-col-6 text-center">
+            <a href="#" style="
+              padding: 16px 0px;
+              font-size: 0px;
+              text-align: center;
+              cursor: pointer;
+            " class="Rdemo-link">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512" xml:space="preserve">
+                    <g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M460.6,271.2c28.2-32.1,42.2-73.3,39.4-115.9c-5.7-88-81.9-155-170-149.3c-42.6,2.8-81.7,22-109.9,54.1 c-28.2,32.1-42.2,73.3-39.4,115.9c0.1,1.5,0.5,3,1.2,4.3c1.9,3.6,5.8,6,10.1,5.7c5.9-0.4,10.3-5.4,9.9-11.3 c-4.9-76.3,53.1-142.4,129.4-147.3c76.3-4.9,142.4,53.2,147.3,129.4c4.9,76.3-53.1,142.4-129.4,147.3c-5.9,0.4-10.3,5.4-9.9,11.3 c0.4,5.9,5.5,10.3,11.3,9.9C393.3,322.4,432.4,303.3,460.6,271.2z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M421.8,219.1c17-19.2,25.6-43.8,24-69.4c-1.5-25.6-12.9-49.1-32.1-66.1s-43.8-25.6-69.4-24 c-25.6,1.5-49.1,12.9-66.1,32.1s-25.6,43.8-24,69.4c0.1,1.6,0.6,3.1,1.3,4.4c1.9,3.5,5.7,5.8,10,5.6c5.9-0.4,10.4-5.4,10-11.3 c-1.2-19.9,5.4-39.1,18.7-54c13.2-14.9,31.5-23.8,51.4-25c19.9-1.2,39.1,5.4,54,18.7c14.9,13.3,23.8,31.5,25,51.4 c1.2,19.9-5.4,39.1-18.7,54c-13.2,14.9-31.5,23.8-51.4,25c-5.9,0.4-10.4,5.4-10,11.3c0.4,5.9,5.4,10.4,11.3,10 C381.3,249.7,404.8,238.3,421.8,219.1z" />
+                            </g>
+                        </g>
+                        <path d="M47.4,507l150.5-150.5L240,482l153-363L30,272l125.5,42.1L5,464.6L47.4,507z" />
+                    </g>
+                </svg>
+                <span style="
+                font-size: 20px;
+                font-family: 'Myriad Set Pro', sans-serif;
+                padding-left: 8px;
+                position: relative;
+                top: -4px;
+                color: #fff;
+              ">Demo</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
