@@ -1,3 +1,46 @@
+// nav toggle
+// Function to toggle the navbar collapse
+const hambugeropen = document.querySelector(".navbar-toggler");
+const hamburgerclose = document.querySelector(".navbar-close");
+const navbarcollapse = document.querySelector(".navbar-collapse");
+
+const navbartoggler = () => {
+  navbarcollapse.classList.toggle("show");
+}
+
+// Select all dropdown toggles with the attribute data-toggle="dropdown"
+const dropdownToggles = document.querySelectorAll('a[data-toggle="dropdown"]');
+
+// Loop through all dropdown toggles and add a click event listener
+dropdownToggles.forEach((toggle, index) => {
+  toggle.addEventListener('click', (event) => {
+    event.preventDefault();  // Prevent default anchor behavior
+    
+    const currentDropdown = toggle.nextElementSibling;  // Get the dropdown-menu next to the clicked toggle
+
+    // Close all other dropdowns except the current one
+    document.querySelectorAll('.dropdown-menu').forEach((dropdown, i) => {
+      if (i !== index) {
+        dropdown.classList.remove('show');
+      }
+    });
+
+    // Toggle the current dropdown menu
+    currentDropdown.classList.toggle('show');
+  });
+});
+
+// Add click listeners to hamburger open/close
+if (hambugeropen) {
+  hambugeropen.addEventListener("click", navbartoggler);
+}
+
+if (hamburgerclose) {
+  hamburgerclose.addEventListener("click", navbartoggler);
+}
+
+
+
 let indexValue = 0;
 const imgElements = document.querySelectorAll('.images img');
 const sliderElements = document.querySelectorAll('.btm-slides span');
@@ -77,20 +120,6 @@ function showNextSlide() {
 }
 
 setInterval(showNextSlide, 5000); // Change text every 3 seconds
-
-
-// nav toggle
-
-const hambugeropen = document.querySelector(".navbar-toggler");
-const hamburgerclose = document.querySelector(".navbar-close");
-const navbarcollapse = document.querySelector(".navbar-collapse")
-
-const navbartoggler = () => {
-  navbarcollapse.classList.toggle("show")
-}
-
-hambugeropen.addEventListener("click", navbartoggler)
-hamburgerclose.addEventListener("click", navbartoggler)
 
 
 // brand logo slider

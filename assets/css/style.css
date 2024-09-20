@@ -1025,7 +1025,22 @@ body {
 
     }
     
-      } 
+      }
+      @media (max-width:992px) {
+        .widthwidth,
+        .display-none {
+            display: none;
+        }
+        .row {
+            justify-content: center;
+        }
+    }
+    
+    @media (max-width:768px) {
+        .mt60{
+            display: none;
+        }
+    } 
       @media (max-width:517px) {
         .solution-wrapper {
             grid-template-columns: repeat(1, 1fr);

@@ -1648,10 +1648,10 @@ body {
     .speciality-search input {
         max-width: -webkit-fill-available;
     }
-    .follow-actions,
+    /* .follow-actions,
     #toTop {
         display: none !important;
-    }
+    } */
     .hidden-phone {
         display: none !important;
     }
@@ -2961,10 +2961,10 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-    .follow-actions,
+    /* .follow-actions,
     .hidden-phone {
         display: none !important;
-    }
+    } */
     .widthwidth .home-form .tab-content .tab-pane .hbspt-form fieldset {
         margin-bottom: 0 !important;
     }

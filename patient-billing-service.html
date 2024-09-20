@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ASA Solution || Practice Audit</title>
+    <title>ASA Solution || Patient Billing Services</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta property="og:image" content="#" />
@@ -25,257 +25,305 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<style>
-    .images img {
-        width: 100%;
-        height: 40dvh;
-        object-fit: cover;
-    }
 
-    .content {
-        position: relative;
-        text-align: center;
-        z-index: 0;
-    }
-
-    .content::after {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        background-color: #00000088;
-        top: 0;
-        left: 0;
-        z-index: 999 !important;
-    }
-
-    .inner-line {
-        display: block;
-        width: 100%;
-        max-width: 500px;
-        height: 1px;
-        background-color: #D8D8D8;
-        margin: auto;
-    }
-
-    .hero-container {
-        position: relative;
-
-    }
-
-    .cridential-wrapper{
-        border: 1px solid #B8E1F2;
-        margin: 50px 80px;
-        margin-top: 50px;
-        border-radius: 150px;
-    }
-    .cridential-wrapper div:nth-child(1) {
-     background-color: #EBFCFF !important;
-     padding: 50px 80px;
-     border-radius: 150px 150px 0 0;
-     border: 1px solid #B8E1F2;
-    }
-    .cridential-wrapper div:nth-child(2) {
-        padding: 50px 80px;
-    }
-
-    .cridential-box{
-        text-align: center;
-    }
-    .medi-services {
-        background-color: #EBFCFF;
-        padding: 0 50px;
-    }
-
-    .medi-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 9999;
-    }
-
-    .medi-text h3 {
-        color: #fff;
-    }
-
-    .medi-text p {
-        color: #fff;
-        margin-top: 20px;
-    }
-
-    .med-hero-btn {
-        background: transparent;
-        padding: 10px 25px;
-        border: 1px solid #0088ca;
-        margin-top: 20px;
-        color: #fff;
-    }
-
-
-.medi-text h3 span {
-    color: #F76501;
-}
-    .medi-heading h2 {
-        text-align: center;
-        color: #32682abd;
-        font-size: 2rem;
-        margin: 100px 0 0 0;
-    }
-
-    .medi-services-text {
-        border: unset;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .medi-services span i {
-        color: #FF4242;
-    }
-.practice-container {
-    background-color: #EBFCFF;
-    padding: 20px 40px;
-}
-    .practice-management-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 100px 0;
-    }
-
-    .practice-management-container img {
-        max-width: 500px;
-    }
-
-    .practice-txt {
-        width: 100%;
-        max-width: 700px;
-    }
-
-    .practice-txt ul li{
-        list-style: disc !important;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
-
-    .practice-txt h2,
-    .practice-txt p {
-        letter-spacing: 1px;
-        color: #002750;
-        line-height: 1.6;
-    }
-
-    .practice-txt-2 {
-        text-align: center;
-        line-height: 2;
-        width: 100%;
-        color: #002750;
-    }
-
-    .practice-txt-2 h2 {
-        font-size: 2.7rem;
-        font-weight: 400;
-    }
-
-    .practice-txt-3 {
-        background-color: #002750;
-        color: #fff;
-        padding: 100px 20px;
-        line-height: 2;
-        text-align: center;
-    }
-    
-    .practice-txt-3 h2{
-        margin-bottom: 20px;
-    } 
-    .practice-txt-3 h3 {
-        color: #F76501;
-    }
-
-    .started-btn {
-        background: transparent;
-        border: 1px solid #F76501;
-        padding: 8px 25px;
-        font-size: 1.5rem;
-        margin-top: 40px;
-        color: #fff;
-        font-weight: 100;
-        transition: color 0.57s;
-    }
-
-    .started-btn:hover {
-        color: #F76501;
-        border: 1px solid #fff;
-    }
-
-    @media (max-width:1280px) {
-        .practice-management-container {
-            flex-direction: column;
-        }
-
-
-        .practice-management-container img {
+    <style>
+        .images img {
             width: 100%;
-            max-width: 100%;
+            height: 40dvh;
+            object-fit: cover;
         }
 
-        .practice-txt {
-            max-width: 69%;
-            margin-top: 30px;
-        }
-    }
-
-    @media (max-width:1080px) {
-        .medi-services-text {
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: start;
-
+        .content {
+            position: relative;
+            text-align: center;
+            z-index: 0;
         }
 
-    }
-
-    @media (max-width:992px) {
-        .display-none {
-            display: none;
+        .content::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: #00000088;
+            top: 0;
+            left: 0;
+            z-index: 999 !important;
         }
-    }
 
-    @media (max-width:517px) {
-        .medi-services-text {
-            grid-template-columns: repeat(1, 1fr);
-            padding: 30px 0;
+        .hero-container {
+            position: relative;
+
+        }
+
+        .medi-services {
+            background-color: #EBFCFF;
+            padding: 0 50px;
         }
 
         .medi-text {
-            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+
+        .medi-text h3 {
+            color: #fff;
+            font-size: 3rem;
+        }
+
+        .medi-text p {
+            color: #fff;
+        }
+
+        .med-hero-btn {
+            background: transparent;
+            padding: 10px 25px;
+            border: 1px solid #0088ca;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .medi-services-text,
+        .medi-content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border: 2px dashed #ccc;
+            padding: 100px 0;
+        }
+
+        .medi-box {
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            display: grid;
+            place-items: center;
+            text-align: center;
+        }
+
+        .medi-box:nth-child(1) {
+            background-color: #0088ca;
+            border: 1px solid #0088ca;
+            color: #fff;
+        }
+
+        .medi-box:nth-child(2) {
+            background-color: #832D70;
+            border: 1px solid #832D70;
+            color: #fff;
+        }
+
+        .medi-box:nth-child(3) {
+            background-color: #ff0000bd;
+            border: 1px solid #ff0000bd;
+            color: #fff;
+        }
+
+        .medi-box div p,
+        .medi-box div i {
+            font-size: 1.4rem;
+        }
+
+        .para {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 1.5rem;
+            color: #5b00ca;
+        }
+
+        .medi-box div i {
+            font-size: 3rem;
+        }
+
+        .medi-heading h2 {
+            text-align: center;
+            color: #32682abd;
+            font-size: 2rem;
+            margin: 100px 0 0 0;
+        }
+
+        .medi-services-text {
+            border: unset;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .medi-services span i {
+            color: #FF4242;
+        }
+
+        .practice-management-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .practice-management-container img {
+            max-width: 500px;
         }
 
         .practice-txt {
-            max-width: 100%;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .practice-txt h2,
+        .practice-txt p {
+            letter-spacing: 1px;
+            color: #002750;
+            line-height: 1.6;
+        }
+
+        .practice-txt-2 {
+            text-align: center;
+            line-height: 2;
+            width: 100%;
+            color: #002750;
+        }
+
+        .practice-txt-2 ul li,
+        .practice-txt-2 p {
+            text-align: start
+        }
+
+        .practice-txt-2 ul li {
+            line-height: 1.9;
         }
 
         .practice-txt-2 h2 {
-            font-size: 1.5rem;
-        }
-
-        .cridential-box h2,
-        .para,
-        .practice-txt-3 h2,
-        .practice-txt-3 h3,
-        .medi-text h3 {
-            font-size: 1.1rem;
-        }
-        .practice-txt ul li{
-            margin: 0 20px ;
+            font-size: 2.7rem;
+            font-weight: 400;
+            color: #832D70;
             text-align: start;
         }
-        .cridential-wrapper {
-            margin: 10px;
+
+        .practice-txt-2 ul li svg path {
+            fill: #832D70;
+            ;
         }
 
-    }
-</style>
+
+        .practice-txt-3 {
+            background-color: #002750;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 100px 0;
+            line-height: 1.5;
+            margin: 50px 0;
+        }
+
+        .practice-txt-3 h3 {
+            color: #F76501;
+            text-align: center;
+            font-size: 1rem;
+            line-height: 1.5;
+            max-width: 70%;
+        }
+
+        .practice-txt-2-imgs img {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 50px;
+            border-radius: 25px;
+            object-fit: contain;
+        }
+
+        .started-btn {
+            background: transparent;
+            border: 1px solid #F76501;
+            padding: 8px 25px;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            color: #fff;
+            font-weight: 100;
+            transition: color 0.57s;
+        }
+
+        .started-btn:hover {
+            color: #F76501;
+            border: 1px solid #fff;
+        }
+
+        @media (max-width:1280px) {
+            .practice-management-container {
+                flex-direction: column;
+            }
+
+            .medi-content-wrapper {
+                flex-wrap: wrap;
+            }
+
+            .practice-management-container img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .practice-txt {
+                max-width: 69%;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width:1080px) {
+            .medi-services-text {
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: start;
+
+            }
+
+        }
+
+        @media (max-width:992px) {
+            .display-none {
+                display: none;
+            }
+        }
+
+        @media (max-width:517px) {
+            .medi-services-text {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 30px 0;
+            }
+
+            .medi-text {
+                width: 80%;
+            }
+
+            .practice-txt {
+                max-width: 100%;
+            }
+
+            .practice-txt-2 h2 {
+                font-size: 1.5rem;
+            }
+
+            .para,
+            .practice-txt-3 h2,
+            .practice-txt-3 h3,
+            .medi-text h3 {
+                font-size: 1.1rem;
+            }
+
+            .medi-content-wrapper {
+                padding: 30px 0;
+            }
+
+            .medi-box {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
 
 <body>
 
@@ -286,7 +334,7 @@
                 <div class="row header-pad no-gutters">
                     <nav class="navbar w-100">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="./index.html">
+                            <a class="navbar-brand" href="#">
                                 <img alt="logo" class="retina0 main-logo" src="./assets/imgs/logo/ASA LOGO.png"
                                     style="width: 73px; height: auto" />
                                 <img alt="logo" class="retina0 insights-logo d-none"
@@ -489,67 +537,76 @@
     </div>
     <!-- navigation bar End -->
 
-
     <!-- hero section start -->
     <section>
         <div class="hero-container">
             <div class="content hero-content">
-                <div class="images">
-                    <img src="./assets/imgs/avtars/doctor-tending-patient.jpg" alt="medical-billing-imgs">
-                    <img src="./assets/imgs/avtars/group-medics-masks-reading-paper.jpg" alt="medical-billing-imgs">
+                <div class="images t">
+                    <img src="./assets/imgs/account-receivable-service/receivable-banner.jpg"
+                        alt="medical-billing-imgs">
+                    <img src="./assets/imgs/account-receivable-service/shipping-document-laptop-connection-homepage.jpg"
+                        alt="medical-billing-imgs">
                 </div>
                 <div class="medi-text">
-                    <h3>Get Your Insurance Claims Faster with <br>
-                        Our <span>MEDICAL BILLING AUDIT SERVICES</span>in the USA
-                    </h3>
-                         <span class="inner-line"></span>
-                    <p>Monitor, identify and rectify critical errors to reduce risks revenue loss and compliance issues.</p>
+                    <h3>Complete Patient Billing</h3>
+                    <p>RMB professionals take care of complete patient billing services for your practice, so you can
+                        focus on what is the most important: quality patient care.</p>
                     <a href="./contact-form.html">
-                        <button class="med-hero-btn">Lets Out More</button>
+                        <button class="med-hero-btn">Lets Get Started</button>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- hero section start -->
+    <!-- hero section End -->
 
-
-    <!-- medical service start -->
-
+    <!-- account text start -->
     <section>
-            <div class="container">
-                <div class="cridential-wrapper">
-                    <div class="cridential-box">
-                        <h2>Outsourcing Medical Billing Audit Services Strengthen Your Practice and Improve Your Revenue</h2>
-                        <p>A professional medical billing audit identifies areas that need improvement. You can provide quality care to patients when you know the billing is right. By having regular audits, you are able to pay attention to patients more than Claims Submission. Also, you can outsource medical billing to Physicians Revenue Group Inc. and let us handle your billing concerns. Our industry experts develop a comprehensive document and share it with practices. From Credentialing Services to practice management, we provide it all. In this way, healthcare practices come to know the reasons for claim denials and experience smooth reimbursements.</p>
-                    </div>
-                    
-                </div>
-            </div>
-    </section>
-
-    <!-- maximize practice revenue -->
-    <section class="practice-container">
         <div class="container">
             <div class="practice-management-container">
                 <div>
-                    <img src="./assets/imgs/avtars/medical-practice-revenue-idea.jpg" alt="avtars">
+                    <img src="./assets/imgs/patient-billing/Patient-Billing-Services-1-1.webp" alt="avtars">
                 </div>
                 <div class="practice-txt">
-                    <h2>Benefits of Our Comprehensive Medical Billing Audit Services</h2>
-                   <ul>
-                    <li>Identify and correct errors in your medical billing</li>
-                    <li>Maximize revenue and ensure proper reimbursements</li>
-                    <li>Improve compliance and avoid costly penalties</li>
-                    <li>Gain insights and analytics on billing performance</li>
-                    <li>Increase transparency in your billing process</li>
-                   </ul>
+                    <h2>Better Billing, Better Customer Service</h2>
+                    <p>
+                        You want to provide excellent customer service. However, this can be challenging when your team
+                        is bogged down by both new patients and billing inquiries. While you are trying to care for new
+                        patients, your front office is always having to answer billing questions for former patients.
+                        This can make it challenging to provide quality customer service to new patients. Outsourcing is
+                        a way to ensure that your team is available to assist new patients. With our help, you can
+                        improve patient satisfaction and patient flow. Inside your clinic and during the billing
+                        process, your patients will have uninterrupted courteous, professional assistance.
+                        <br>
+                        Our team is highly knowledgeable and incredibly patient. The patients who communicate with us
+                        are always treated with exceptional customer service. Because we are an extension of YOUR staff,
+                        and YOUR representatives, it matters to us how your patients are cared for when it comes to
+                        patient billing.
+                    </p>
                 </div>
             </div>
-         
+            <div class="practice-txt-2">
+                <div class="practice-txt-2-imgs">
+                    <img src="./assets/imgs/patient-billing/Patient-Billing-Services-1.webp"
+                        alt="avtars">
+                </div>
+                <h2>Floods of Patient Calls</h2>
+                <p>
+                    Right Medical Billing offers you complete patient billing. While we are translating your medical
+                    records, we will also mail statements, collect dues, and answer patient questions. Your patients can
+                    expect to have a direct line of communication with us to help them with any of their billing needs.
+                    Because we will oversee the billing cycle and revenue cycle management, it decreases the manpower
+                    your facility would require otherwise. Your staff’s priority should only be patient care centered.
+                    Your staff is already engulfed with caring for patients, charting, and treatment plans. Your time is
+                    valuable, and so are your patients. Your patients recognize these qualities and appreciate it.
+                </p>
+            </div>
             <div class="practice-txt-3">
-                <h2>Your Practice Needs to Get Stronger</h2>
-                <h3>And We Have All The Expertise</h3>
+                <h2>Contact Us for Patient Billing Services </h2>
+                <h3>Contact Right Medical Billing today at <a href="tel:000-000-0000">(000)-000-0000 </a>for your
+                    consultation. There are multiple advantages to allowing us to become a part of your team. We will
+                    help you increase your cash and patient flow while also helping you to streamline your work. Our
+                    team is more than just a billing company. Contact us to learn more about how we can help you.</h3>
                 <a href="./contact-form.html">
                     <button class="started-btn">Get Started</button>
                 </a>
@@ -557,7 +614,9 @@
         </div>
 
     </section>
-    <!-- Our Satisfied Providers end -->
+
+
+
 
     <!-- for side chat -->
     <ul class="follow-actions" role="list">
