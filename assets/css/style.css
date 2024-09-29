@@ -343,6 +343,7 @@ body {
     color: #0000008c;
     font-weight: 600;
     line-height: 1.4;
+    color: #0088CA;
 }
 .text-content h3{
     color: #0000008c;
@@ -418,7 +419,7 @@ body {
     max-width: 100%;
     justify-content: start;
     align-items: center;
-    background: #832D70;
+    background: #0088CA;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -435,11 +436,11 @@ body {
 
 .specilist-content:hover .spacilist-icon i{
     color: #fff;
-    background-color: #832D70;
+    background-color: #0088CA;
 }
  .specilist-content:hover {
     background-color: transparent;
-    border: 1px solid #832D70;
+    border: 1px solid #0088CA;
     transition: border 0.58s;
 }
 
@@ -519,7 +520,7 @@ body {
   .testimonial-box{
     width:500px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-    background-color: #832D70;
+    background-color: #0088CA;
     padding: 20px;
     margin: 15px;
     cursor: pointer;

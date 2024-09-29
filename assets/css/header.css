@@ -449,8 +449,8 @@
 .nav-bar-wrapper .navprice button {
     font-weight: 700;
     color: #fff;
-    background-color: #832D70;
-    border-color: #832D70;
+    background-color: #0088CA;
+    border-color: #0088CA;
     font-size: 14px;
     line-height: 20px;
     padding: 8px 20px 7px;
@@ -462,7 +462,7 @@
     cursor: pointer;
     webkit-animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
     animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
-    box-shadow: 0 0 0 0 #832D70;
+    box-shadow: 0 0 0 0 #0088CA;
 }
 
 }
@@ -534,7 +534,7 @@ button#hd-button {
 .button-pulse {
     -webkit-animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
     animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
-    box-shadow: 0 0 0 0 #832D70;
+    box-shadow: 0 0 0 0 #0088CA;
 }
 
 @-webkit-keyframes pulse {

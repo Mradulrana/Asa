@@ -1,5 +1,6 @@
 .title {
     margin-bottom: 2rem;
+    color: #0088CA;
   }
   
   .hidden {
@@ -99,11 +100,11 @@
   }
   
   .button {
-    background-color: blueviolet;
+    background-color: #0088CA;
     padding: 1rem 2rem;
     border: none;
     border-radius: .25rem;
-    color: white;
+    color: #fff !important;
     font-weight: bold;
     display: block;
     width: 100%;
