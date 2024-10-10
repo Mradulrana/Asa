@@ -533,7 +533,8 @@ body {
     margin-bottom: 80px;
   }
   .testimonial-box{
-    width:500px;
+    width: 100%;
+    max-width:500px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
     background-color: #0088CA;
     padding: 20px;
@@ -605,14 +606,11 @@ body {
   
   @media(max-width:1060px){
     .testimonial-box{
-        width:45%;
-        padding: 10px;
+        max-width:100% !important;
     }
   }
   @media(max-width:790px){
-    .testimonial-box{
-        width:100%;
-    }
+ 
     .testimonial-heading h1{
         font-size: 1.4rem;
     }

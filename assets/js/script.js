@@ -208,14 +208,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// show more Popups
+
+// Open popup on click
 document.querySelectorAll('.btn-open-popup').forEach(button => {
   button.addEventListener('click', function() {
       const popupId = this.getAttribute('data-popup');
       document.getElementById(popupId).style.display = 'block';
       document.querySelector('.overlay-bg').style.display = 'block';
-      document.body.style.overflow= 'hidden';
-
+      document.body.style.overflow = 'hidden';
   });
 });
 
