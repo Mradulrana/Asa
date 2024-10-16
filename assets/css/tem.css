@@ -2359,6 +2359,7 @@ input[type="search"]:focus::-webkit-search-results-decoration {
     font-family: 'Open Sans', sans-serif !important;
     margin-left: 0 !important;
     padding: 0;
+    text-wrap:nowrap;
 }
 
 .footer_ul li {
