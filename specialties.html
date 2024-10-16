@@ -1721,37 +1721,37 @@
     <!-- for side chat -->
     <ul class="follow-actions" role="list">
         <li class="action-contact action" id="contact-email">
-            <a href="#" id="contact-email-init"><i class="contact-icon-email fas fa-envelope-open"></i>
+            <a href="./contact-form.html" id="contact-email-init"><i class="contact-icon-email fas fa-envelope-open"></i>
                 <span class="peep-text">Contact Us</span></a>
         </li>
         <li class="action-contact action" id="contact-number-sales">
-            <a href="tel:+18666438367">
+            <a href="tel:+12017701103">
                 <i class="contact-icon-phone fas fa-phone-volume"></i>
                 <span class="peep-text2">Sales</span>
-                <span class="peep-text down">000-000-0000</span>
+                <span class="peep-text down">201-770-1103</span>
             </a>
         </li>
-        <li class="action-contact action" id="contact-number-support">
+        <!-- <li class="action-contact action" id="contact-number-support">
             <a href="#">
                 <i class="contact-icon-phone2 fas fa-headphones"></i>
                 <span class="peep-text2">Support</span>
                 <span class="peep-text down">000-000-0000</span>
             </a>
-        </li>
+        </li> -->
         <li class="action-contact action" id="facebook">
-            <a href="#">
+            <a href="https://www.facebook.com/share/QPAymP3KPVNeqioy/?mibextid=LQQJ4d">
                 <i class="contact-icon-phone2 facebook fa-brands fa-facebook"></i>
                 <span class="peep-text2">Facebook</span>
             </a>
         </li>
-        <li class="action-contact action" id="youtube">
+        <!-- <li class="action-contact action" id="youtube">
             <a href="#">
                 <i class="contact-icon-phone2 youtube fa-brands fa-youtube"></i>
                 <span class="peep-text2">Youtube</span>
             </a>
-        </li>
+        </li> -->
         <li class="action-contact action" id="insta">
-            <a href="#">
+            <a href="https://www.instagram.com/asamedicalbilling?igsh=dDljanlobWk4cnlt ">
                 <i class="contact-icon-phone2 insta fa-brands fa-instagram"></i>
                 <span class="peep-text2">Instagram</span>
             </a>
@@ -1761,7 +1761,7 @@
     <div class="mt60 bg_footer">
         <div class="container">
             <div class="row pt_60_85">
-                <div class="col-md-3 hidden-phone">
+                <div class="col-md-2 hidden-phone" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">
                     <div class="title_footer">Solutions</div>
                     <span class="b_top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     <ul class="footer_ul">
@@ -1769,36 +1769,45 @@
                         <li>
                             <a href="./account-receivable-service.html" class="cool-link">Account receivable service</a>
                         </li>
-                        <li><a href="./patient-billing-service.html" class="cool-link">patient billing service</a></li>
+                        <li><a href="./patient-billing-service.html" class="cool-link">Patient billing service</a></li>
                         <li>
-                            <a href="./total-practice-billing-compliance.html" class="cool-link">total practice billing
-                                compliance</a>
+                            <a href="./total-practice-billing-compliance.html" class="cool-link">Total practice billing compliance</a>
                         </li>
                         <li><a href="./credentials.html" class="cool-link">Credentialing </a></li>
                         <li><a href="./audit.html" class="cool-link">Practice Audit</a></li>
                     </ul>
                 </div>
                 <!-- .hidden-phone -->
-                <div class="col-md-3 hidden-phone chapi">
-                    <div class="title_footer">Company</div>
+                <div class="col-md-2 hidden-phone chapi" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">
+                    <div class="title_footer" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">Company</div>
                     <span class="b_top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     <ul class="footer_ul">
                         <li><a href="./about.html" class="cool-link"> About us</a></li>
                         <li><a href="./faq.html" class="cool-link">FAQs</a></li>
                     </ul>
                 </div>
+
+                <!-- partner -->
+                <div class="col-md-3 hidden-phone chapi" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">
+                    <div class="title_footer" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">Partners</div>
+                    <span class="b_top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <ul class="footer_ul">
+                        <li><a href="http://Motitechnicalschool.com" class="cool-link"> Moti Technical School</a></li>
+                        <li><a href="https://medscreenlabs.com/" class="cool-link">Med Screen Lab</a></li>
+                    </ul>
+                </div>
                 <!-- .hidden-phone -->
-                <div class="col-md-6 mb-3 widthwidth">
-                    <div class="title_footer">Contact Us</div>
+                <div class="col-md-5 mb-3 widthwidth hidden-phone" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">
+                    <div class="title_footer" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">Contact Us</div>
                     <span class="b_top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     <div class="home-form">
-                        <form action="">
-                            <input type="text" placeholder="Name*">
-                            <input type="text" placeholder="Practice">
+                        <form action="" method="POST">
+                            <input type="text"  name="name" id="form-name" placeholder="Name*">
+                            <input type="text" name="email" id="form-email" placeholder="Practice">
                             <input type="email" name="eamil" id="" placeholder="Email*">
-                            <input type="tel" placeholder="Phone*">
-                            <input type="text" id="" placeholder="Comment">
-                            <button class="submit-btn">Send Request</button>
+                            <input type="tel" name="number" id="form-number" placeholder="Phone*">
+                            <input type="text"  name="message" id="form-message" id="" placeholder="Comment">
+                            <button type="submit" class="submit-btn">Send Request</button>
                         </form>
                     </div>
                     <!-- .home-form -->
