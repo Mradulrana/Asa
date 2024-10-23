@@ -95,12 +95,16 @@ z-index: -1;
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
-  color: #131414;
+}
+.title {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 .faqQuestion {
   font-size: 15px;
-  color: #832D70;
+  color: #0088CA;
   text-align: start;
 }
 
@@ -233,13 +237,13 @@ z-index: -1;
                                   src="./assets/imgs/logo/ASA LOGO.png" style="width: 73px; height: auto" />
                           </a>
                       </div>
-                      <div class="nav-bar-wrapper">
+                       <div class="nav-bar-wrapper">
                           <div class="phone text-right visible-desktop">
-                              <a class="info-hover" href="#">Sales
+                              <a class="info-hover" href="mailto:angela@asamedicalbilling.com">Sales
                                   <div class="tooltip show">Email</div>
                               </a>
-                              <a href="tel:+" style="color: #000; text-decoration: none">+92 000 000
-                                  0000</a>&nbsp;<span style="display: none">&nbsp;&nbsp;|</span><a
+                              <a href="tel:+12017701103" style="color: #000; text-decoration: none">+1201-770-1103
+                                  </a>&nbsp;<span style="display: none">&nbsp;&nbsp;|</span><a
                                   style="display: none" href="#" class="hvr-sweep-to-right btn-align">Log In</a>
                           </div>
                           <nav class="navbar navbar-expand-lg navbar-light ">
@@ -254,9 +258,41 @@ z-index: -1;
                               <div class="collapse navbar-collapse" id="navbarNav">
                                   <div class="navbar-close">X</div>
                                   <ul class="pull-right nav nav-pills">
-                                    <li>
-                                      <a  href="./index.html">Home</a>
-                                  </li>
+                                      <li>
+                                          <a  href="./index.html">Home</a>
+                                      </li>
+                                      <li>
+                                          <a data-toggle="dropdown" class="dropdown-toggle">Company <b
+                                                  class="caret"></b></a>
+                                          <div class="dropdown-menu">
+                                              <div>
+                                                  <div class="titlemenuh2">
+                                                      <p class="mian">Company</p>
+                                                  </div>
+                                                  <div class="d-flex border-b">
+                                                      <div class="navi-box">
+                                                          <a href="./about.html">
+                                                              <h4>About Us</h4>
+                                                              <p>
+                                                                  Everything there is to know about ASA
+                                                                  Medica billing Service
+                                                              </p>
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                                  <div class="d-flex">
+                                                      <div class="navi-box">
+                                                          <a href="./faq.html">
+                                                              <h4>Faq</h4>
+                                                              <p>Your favrate qustions to ask</p>
+                                                          </a>
+                                                      </div>
+                                                      <!-- </div> -->
+                                                  </div>
+                                              </div>
+                                              <div class="cb"></div>
+                                          </div>
+                                      </li>
                                       <li>
                                           <a data-toggle="dropdown" class="dropdown-toggle">Solutions <b
                                                   class="caret"></b></a>
@@ -270,8 +306,7 @@ z-index: -1;
                                                           <a href="./medical-billing-services.html">
                                                               <h4>Medical billing Services</h4>
                                                               <p>
-                                                                  Architecture, features, compliance,
-                                                                  standards and delivery models
+                                                                  We aim to enhance operational efficiency
                                                               </p>
                                                           </a>
                                                       </div>
@@ -286,7 +321,7 @@ z-index: -1;
                                                       </div>
                                                       <div class="navi-box">
                                                           <a href="./patient-billing-service.html">
-                                                              <h4>patient billing service</h4>
+                                                              <h4>Patient billing service</h4>
                                                               <p>
                                                                   Improve service quality and optimize
                                                                   administrative workflows
@@ -295,7 +330,7 @@ z-index: -1;
                                                       </div>
                                                       <div class="navi-box">
                                                           <a href="./total-practice-billing-compliance.html">
-                                                              <h4>total practice billing compliance</h4>
+                                                              <h4>Total practice billing compliance</h4>
                                                               <p>
                                                                   Specialty tools, content, templates and
                                                                   automation
@@ -375,38 +410,6 @@ z-index: -1;
 
                                           </div>
                                       </li>
-                                      <li>
-                                          <a data-toggle="dropdown" class="dropdown-toggle">Company <b
-                                                  class="caret"></b></a>
-                                          <div class="dropdown-menu">
-                                              <div>
-                                                  <div class="titlemenuh2">
-                                                      <p class="mian">Company</p>
-                                                  </div>
-                                                  <div class="d-flex border-b">
-                                                      <div class="navi-box">
-                                                          <a href="./about.html">
-                                                              <h4>About Us</h4>
-                                                              <p>
-                                                                  Everything there is to know about ASA
-                                                                  Medica billing Service
-                                                              </p>
-                                                          </a>
-                                                      </div>
-                                                  </div>
-                                                  <div class="d-flex">
-                                                      <div class="navi-box">
-                                                          <a href="./faq.html">
-                                                              <h4>Faq</h4>
-                                                              <p>Your favrate qustions to ask</p>
-                                                          </a>
-                                                      </div>
-                                                      <!-- </div> -->
-                                                  </div>
-                                              </div>
-                                              <div class="cb"></div>
-                                          </div>
-                                      </li>
 
                                       <li class="last-child">
                                           <a href="./contact-form.html" class="navprice navprice1 formod">
@@ -430,109 +433,109 @@ z-index: -1;
   <!-- navigation bar End -->
    
   <div id="FAQ">
-    <p class="title">FAQ'S</p>
+    <p class="title ">FAQ'S</p>
     <div class="accordian">
 
       <div class="item">
         <div class="FAQ-title">
-          <p class="faqQuestion">1. How long does the credentialing process take for a new provider? FAQ</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s class="faqQuestion">1. How long does the credentialing process take for a new provider? FAQ</p>
           <span class="expandToggle">+</span>
         </div>
         <div class="FAQ-content show">
-          <p>It varies by payor and can be based on their backlog of applications.  Typically, the process is between 60 and 120 days. It can sometimes take even longer.   Commercial payors always tend to take the longest amount of time.</p>
-          <p>  The credentialing process duration can vary significantly depending on several factors, including the payer <br> (Medicare vs. commercial insurance), the completeness of the application, the complexity of the provider's credentials, and the efficiency of the credentialing organization involved.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>It varies by payor and can be based on their backlog of applications.  Typically, the process is between 60 and 120 days. It can sometimes take even longer.   Commercial payors always tend to take the longest amount of time.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>  The credentialing process duration can vary significantly depending on several factors, including the payer <br> (Medicare vs. commercial insurance), the completeness of the application, the complexity of the provider's credentials, and the efficiency of the credentialing organization involved.</p>
         </div>
       </div>
       <div class="item">
         <div class="FAQ-title">
-          <p class="faqQuestion">2. How long does the Medicare Credentialing process take?</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" class="faqQuestion">2. How long does the Medicare Credentialing process take?</p>
           <span class="expandToggle">+</span>
         </div>
         <div class="FAQ-content">
-          <p> <strong>Initial Enrollment:</strong> The process for initial Medicare enrollment can take around 60-120 days or longer. This includes submitting the CMS-855 form and required documentation to the Medicare Administrative Contractor (MAC). Delays can occur if there are errors or missing information in the application.</p>
-          <p><strong>Revalidation:</strong>Medicare providers are required to revalidate their enrollment every few years. The revalidation process typically takes 60-90 days, although it can vary.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="FAQ-title">
-          <p class="faqQuestion">3. What are the general Factors Affecting Timeline for credentialing services?</p>
-          <span class="expandToggle">+</span>
-        </div>
-        <div class="FAQ-content">
-          <p><strong>Application Completeness:</strong> Ensuring all required documents and information are submitted accurately and promptly can significantly impact how quickly the process moves forward.</p>
-          <p><strong>Verification Process</strong> Verifying credentials, such as medical education, training, licensure, and work history, can take time, especially if there are discrepancies or delays in receiving verifications from third parties.</p>
-          <p><strong>Payer Requirements:</strong> Different payers may have varying requirements and processing times, which can affect how long credentialing takes with each specific insurer.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s> <strong>Initial Enrollment:</strong> The process for initial Medicare enrollment can take around 60-120 days or longer. This includes submitting the CMS-855 form and required documentation to the Medicare Administrative Contractor (MAC). Delays can occur if there are errors or missing information in the application.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Revalidation:</strong>Medicare providers are required to revalidate their enrollment every few years. The revalidation process typically takes 60-90 days, although it can vary.</p>
         </div>
       </div>
 
       <div class="item">
         <div class="FAQ-title">
-          <p class="faqQuestion">4. Why should we consider outsourcing our billing?</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" class="faqQuestion">3. What are the general Factors Affecting Timeline for credentialing services?</p>
           <span class="expandToggle">+</span>
         </div>
         <div class="FAQ-content">
-          <p>You should consider outsourcing your billing when you do not have the proper personnel to efficiently handle the required tasks to accomplish a seamless billing process from start to finish. Having the right person, effectively trained, to do the right job is key in ensuring timely and accurate reimbursement.</p>
-          <p>Often times, the internal team is only handling the electronic billing process, but not working rejections and denials or doing proper claims follow-up to ensure the difficult claims get paid.  When we assume the billing and collections for a practice, 95% of the time, we find that rejections are sitting and have not been worked, which represents cash that is not being collections.  Likewise, if denials are not worked, claims will likely have to be written off over time.  The follow-up process is time-intensive, but required to collect all the cash that belongs to the providers and the practice.</p>
-          <p>Billing companies stay updated with changes in regulations and compliance requirements, reducing the risk of errors and potential penalties for non-compliance.  Professional billing services often result in faster processing of claims and payments, leading to improved cash flow for the practice.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Application Completeness:</strong> Ensuring all required documents and information are submitted accurately and promptly can significantly impact how quickly the process moves forward.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Verification Process</strong> Verifying credentials, such as medical education, training, licensure, and work history, can take time, especially if there are discrepancies or delays in receiving verifications from third parties.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Payer Requirements:</strong> Different payers may have varying requirements and processing times, which can affect how long credentialing takes with each specific insurer.</p>
         </div>
       </div>
 
       <div class="item">
         <div class="FAQ-title">
-          <p class="faqQuestion">6. What is the cost of medical billing and collections services?</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" class="faqQuestion">4. Why should we consider outsourcing our billing?</p>
           <span class="expandToggle">+</span>
         </div>
         <div class="FAQ-content">
-          <p>We typically invoice for medical billing and collections services on a percentage basis. If we are strictly tasked with working accounts to improve collections, we would invoice for a percentage of those collections.  The typical range is from 4% to 8% but it depends on the size of the practice, the specialty, and whether or not we are handling all aspects of the billing process (from electronic billing to patient statements) versus just some of the tasks.</p>
-          <p>Some of our services may also be billed at an hourly rate – such as initial billing process review, weekly and/or monthly reporting, regularly scheduled check-in calls – but that will be agreed upon up front with each client.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>You should consider outsourcing your billing when you do not have the proper personnel to efficiently handle the required tasks to accomplish a seamless billing process from start to finish. Having the right person, effectively trained, to do the right job is key in ensuring timely and accurate reimbursement.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>Often times, the internal team is only handling the electronic billing process, but not working rejections and denials or doing proper claims follow-up to ensure the difficult claims get paid.  When we assume the billing and collections for a practice, 95% of the time, we find that rejections are sitting and have not been worked, which represents cash that is not being collections.  Likewise, if denials are not worked, claims will likely have to be written off over time.  The follow-up process is time-intensive, but required to collect all the cash that belongs to the providers and the practice.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>Billing companies stay updated with changes in regulations and compliance requirements, reducing the risk of errors and potential penalties for non-compliance.  Professional billing services often result in faster processing of claims and payments, leading to improved cash flow for the practice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="FAQ-title">
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" class="faqQuestion">6. What is the cost of medical billing and collections services?</p>
+          <span class="expandToggle">+</span>
+        </div>
+        <div class="FAQ-content">
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>We typically invoice for medical billing and collections services on a percentage basis. If we are strictly tasked with working accounts to improve collections, we would invoice for a percentage of those collections.  The typical range is from 4% to 8% but it depends on the size of the practice, the specialty, and whether or not we are handling all aspects of the billing process (from electronic billing to patient statements) versus just some of the tasks.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>Some of our services may also be billed at an hourly rate – such as initial billing process review, weekly and/or monthly reporting, regularly scheduled check-in calls – but that will be agreed upon up front with each client.</p>
         </div>
       </div>
       <div class="item">
         <div class="FAQ-title">
-          <p class="faqQuestion">7. How do you communicate with the office regarding needed information?</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" class="faqQuestion">7. How do you communicate with the office regarding needed information?</p>
           <span class="expandToggle">+</span>
         </div>
         <div class="FAQ-content">
-          <p>Effective communication between Asa and the healthcare provider's office is crucial for smooth operations and accurate billing. Here are common methods and practices for communication:</p>
-          <p><strong>Electronic Health Records (EHR) Integration:</strong> We can integrate directly with the provider's EHR system. This allows for seamless access to patient demographics, encounter notes, and coding information without manual transfer, ensuring accuracy and efficiency.</p>
-          <p><strong>Secure Messaging Platforms:</strong> Utilizing secure messaging platforms or portals for communication ensures that sensitive patient information and billing details are transmitted securely with the provider's office.</p>
-          <p><strong>Regular Meetings or Calls:</strong>  Scheduled meetings or conference calls between the billing company and the provider's office can facilitate discussions on billing issues, updates on claim statuses, and addressing any concerns or questions promptly.
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>Effective communication between Asa and the healthcare provider's office is crucial for smooth operations and accurate billing. Here are common methods and practices for communication:</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Electronic Health Records (EHR) Integration:</strong> We can integrate directly with the provider's EHR system. This allows for seamless access to patient demographics, encounter notes, and coding information without manual transfer, ensuring accuracy and efficiency.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Secure Messaging Platforms:</strong> Utilizing secure messaging platforms or portals for communication ensures that sensitive patient information and billing details are transmitted securely with the provider's office.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Regular Meetings or Calls:</strong>  Scheduled meetings or conference calls between the billing company and the provider's office can facilitate discussions on billing issues, updates on claim statuses, and addressing any concerns or questions promptly.
             Email Communication: Email is often used for routine communications or general inquiries.</p>
-            <p><strong>Phone Communication:</strong> Direct phone calls may be used for urgent matters or complex issues that require immediate attention or detailed discussion.</p>
-           <p><strong>Training and Documentation:</strong> Providing training sessions or documentation to the healthcare provider's office staff on best practices, coding updates, and compliance requirements ensures clear communication and understanding of billing processes.</p>
-           <p><strong>Follow-Up Protocols:</strong> Requests for additional information or actions are tracked through Excel and access to Sharepoint online, which ensures that items are responded to promptly, minimizing delays in billing and collections.</p>
+            <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Phone Communication:</strong> Direct phone calls may be used for urgent matters or complex issues that require immediate attention or detailed discussion.</p>
+           <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Training and Documentation:</strong> Providing training sessions or documentation to the healthcare provider's office staff on best practices, coding updates, and compliance requirements ensures clear communication and understanding of billing processes.</p>
+           <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Follow-Up Protocols:</strong> Requests for additional information or actions are tracked through Excel and access to Sharepoint online, which ensures that items are responded to promptly, minimizing delays in billing and collections.</p>
            <strong>By establishing effective communication channels and practices, we can maintain a collaborative relationship, ensuring accurate billing, timely reimbursement, and overall satisfaction with billing services.</strong>
         </div>
       </div>
       <div class="item">
         <div class="FAQ-title">
-          <p class="faqQuestion">8. What differentiates Asa Consulting Services and Asa Billing Solutions from other outsourced medical billing companies or vendors?</p>
+          <p  data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" class="faqQuestion">8. What differentiates Asa Consulting Services and Asa Billing Solutions from other outsourced medical billing companies or vendors?</p>
           <span class="expandToggle">+</span>
         </div>
         <div class="FAQ-content">
-          <p>Our medical billing services stand out from other outsourced vendors and practice management system providers by offering tailored solutions backed by deep industry expertise.  Our proactive denial management strategies and compliance expertise ensure minimal disruptions and maximum revenue capture. We combine advanced technology with personalized service to optimize revenue cycles and ensure compliance, from coding accuracy to seamless integration with your existing systems. With a focus on transparency, proactive support, measurable results, and dedicated Revenue Cycle Specialists, we empower practices to thrive financially while delivering exceptional patient care.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>Our medical billing services stand out from other outsourced vendors and practice management system providers by offering tailored solutions backed by deep industry expertise.  Our proactive denial management strategies and compliance expertise ensure minimal disruptions and maximum revenue capture. We combine advanced technology with personalized service to optimize revenue cycles and ensure compliance, from coding accuracy to seamless integration with your existing systems. With a focus on transparency, proactive support, measurable results, and dedicated Revenue Cycle Specialists, we empower practices to thrive financially while delivering exceptional patient care.</p>
         </div>
       </div>
 
       <div class="item">
         <div class="FAQ-title">
-          <p class="faqQuestion">9. How can RCM services benefit our medical practice?</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" class="faqQuestion">9. How can RCM services benefit our medical practice?</p>
           <span class="expandToggle">+</span>
         </div>
         <div class="FAQ-content">
-          <p>Our RCM services streamline billing processes, reduce administrative burden, and improve revenue capture through meticulous coding, claims submission, and payment posting. We leverage advanced technology to enhance accuracy and compliance, ensuring faster reimbursements and increased financial predictability for your practice.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s>Our RCM services streamline billing processes, reduce administrative burden, and improve revenue capture through meticulous coding, claims submission, and payment posting. We leverage advanced technology to enhance accuracy and compliance, ensuring faster reimbursements and increased financial predictability for your practice.</p>
         </div>
       </div>
       <div class="item">
         <div class="FAQ-title">
-          <p class="faqQuestion">10. What is Revenue Cycle Management (RCM) and why is it so important?</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop" class="faqQuestion">10. What is Revenue Cycle Management (RCM) and why is it so important?</p>
           <span class="expandToggle">+</span>
         </div>
         <div class="FAQ-content">
-          <p><strong>Definition:</strong> Revenue Cycle Management (RCM) refers to the financial process of managing the healthcare revenue cycle, which encompasses all administrative and clinical functions that contribute to the capture, management, and collection of patient service revenue. It involves the entire lifecycle of a patient account from initial appointment scheduling or registration to claims submission to final payment of the balance.</p>
-          <p><strong>Key Components:</strong> Key Components: Patient registration, insurance verification and authorization, charge capture, coding, claims submission, payment posting, denial management, AR follow-up, revenue analysis, and reporting.</p>
-         <p><strong>Importance:</strong>Effective revenue cycle management is essential for healthcare organizations to optimize financial performance, ensure regulatory compliance, and maintain operational efficiency. It aims to maximize revenue capture, reduce billing errors and claim denials, accelerate payment cycles, and ultimately support the delivery of high-quality patient care by ensuring financial stability.</p> 
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Definition:</strong> Revenue Cycle Management (RCM) refers to the financial process of managing the healthcare revenue cycle, which encompasses all administrative and clinical functions that contribute to the capture, management, and collection of patient service revenue. It involves the entire lifecycle of a patient account from initial appointment scheduling or registration to claims submission to final payment of the balance.</p>
+          <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Key Components:</strong> Key Components: Patient registration, insurance verification and authorization, charge capture, coding, claims submission, payment posting, denial management, AR follow-up, revenue analysis, and reporting.</p>
+         <p data-scrolly-top="blurInBottom" data-scrolly-down="fadeInLeft" duration: 0.4s><strong>Importance:</strong>Effective revenue cycle management is essential for healthcare organizations to optimize financial performance, ensure regulatory compliance, and maintain operational efficiency. It aims to maximize revenue capture, reduce billing errors and claim denials, accelerate payment cycles, and ultimately support the delivery of high-quality patient care by ensuring financial stability.</p> 
         </div>
       </div>
 

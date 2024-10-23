@@ -892,7 +892,7 @@ button#hd-button {
 
 @media (max-width: 350px) {
     .navbar-brand img {
-        width: 100px !important;
+        width: 60px !important;
         height: auto !important;
     }
 }
