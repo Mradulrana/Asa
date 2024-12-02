@@ -2292,16 +2292,16 @@ input[type="search"]:focus::-webkit-search-results-decoration {
     }
     .ftr-twitter,
     .ftr-facebook,
-    .ftr-ASA Medica billing Service {
+    .ftr-ASA Medica Billing Service {
         padding: 0 !important;
         border: none !important;
     }
     .ftr-twitter::after,
     .ftr-facebook::after,
-    .ftr-ASA Medica billing Service::after {
+    .ftr-ASA Medica Billing Service::after {
         content: none !important;
     }
-    .ftr-ASA Medica billing Service::before {
+    .ftr-ASA Medica Billing Service::before {
         position: relative !important;
         font-weight: lighter !important;
         line-height: 12px !important;
@@ -2798,7 +2798,7 @@ textarea {
     font-size: 1.1875em;
     width: 46px;
     height: 46px;
-    background: transparent url(../images/contact-icons-ASA Medica billing Service.png) 0 0 no-repeat;
+    background: transparent url(../images/contact-icons-ASA Medica Billing Service.png) 0 0 no-repeat;
     -moz-transition: background-color .4s ease, background-position .2s ease;
     -ie-transition: background-color .4s ease, background-position .2s ease;
     -o-transition: background-color .4s ease, background-position .2s ease;
@@ -3505,7 +3505,7 @@ a.regular {
     content: none;
 }
 
-.ftr-ASA Medica billing Service {
+.ftr-ASA Medica Billing Service {
     /*padding: 19px 29px;
     border: 1.2px solid #fff;
     border-radius: 50%;*/
@@ -3514,8 +3514,8 @@ a.regular {
     font-size: 36px;
 }
 
-.ftr-ASA Medica billing Service::before {
-    content: "ASA Medica billing ServiceBlog";
+.ftr-ASA Medica Billing Service::before {
+    content: "ASA Medica Billing ServiceBlog";
     position: absolute;
     font-size: 9px;
     left: 0;
@@ -3526,7 +3526,7 @@ a.regular {
     content: none;
 }
 
-.ftr-ASA Medica billing Service::after {
+.ftr-ASA Medica Billing Service::after {
     content: "Subscribe";
     position: absolute;
     font-size: 8px;
