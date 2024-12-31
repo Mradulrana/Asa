@@ -14,14 +14,16 @@ if (!isset($_REQUEST['email'])) {
 // Form Fields
 $firstname = $_REQUEST['name'];
 $email = $_REQUEST['email'];
-$number = $_REQUEST['number'];
+$number = $_REQUEST['number']
+$practice = $_REQUEST['practice'];
 $message = $_REQUEST['message'];
 
 
 $msg = 
    "First Name: " . $firstname . "\r\n" . 
    "Email: " . $email . "\r\n" . 
-   "Number: " . $number . "\r\n" . // Added missing period and colon
+   "Number: " . $number . "\r\n" . 
+   "Practice: " . $practice . "\r\n" . // Added missing period and colon
    "Message: " . $message ;
 
 // Send mail

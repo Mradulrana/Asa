@@ -74,7 +74,7 @@ class FormValidator {
   }
   
   const form = document.querySelector('.form')
-  const fields = ["username", "email", "practice", "comment"]
+  const fields = ["username", "email", "practice", "number", "comment"]
   
   const validator = new FormValidator(form, fields)
   validator.initialize()
